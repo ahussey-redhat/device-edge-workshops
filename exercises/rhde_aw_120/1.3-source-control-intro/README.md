@@ -20,13 +20,13 @@ This exercise will cover:
 
 > **Note**
 >
-> If you are using an edge device on-site: your instructor will provide the IP address/DNS entry of the Gitea instance that will be running locally. Optionally, more information can be found on your student page.
+> If you are using an edge device on-site, your instructor will provide the IP address/DNS entry of the Gitea instance that will be running locally. Optionally, more information can be found on your student page.
 
 > **Note**
 >
 > If you are using Gitea in AWS: the login information can be found on your student page.
 
-After entering the URL in a browser, you will be greeted with the Gitea login page. To log in, the username will be "student$(your_student_number)", such as `student1`, and the password located on your student page.
+After entering the URL in a browser, you will be greeted with the Gitea login page. To log in, the username will be `student#`, such as `student1`, and the password located on your student page.
 
 ![Gitea Login Page](../images/gitea-login.png)
  
@@ -44,7 +44,17 @@ On the right-hand side of the Gitea dashboard is a link to a repository called `
 
 > **Note**
 >
-> The external SSH port for Gitea is `2222`. Be sure to append the correct port to `git` commands if using git over SSH instead of over http(s). For example `git clone ssh://git@g${gitea_server}:2222/student${your_student_number}/device-edge-codebase.git`
+> The external SSH port for Gitea is `2222`. Be sure to append the correct port to `git` commands if using git over SSH instead of over http(s). For example `git clone ssh://git@<gitea_server>:2222/student${your_student_number}/device-edge-codebase.git`
+
+The above may not work, as the port number might be treated as the repository name. An alternate method is to add a ssh config.
+
+```bash
+# ~/.ssh/config
+host <gitea_server>
+  port 2222
+  identityFile ~/.ssh/<ssh-private-key>
+  identitiesOnly yes
+```
 
 ---
 **Navigation**

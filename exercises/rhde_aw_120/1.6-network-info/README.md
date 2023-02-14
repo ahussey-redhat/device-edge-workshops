@@ -24,11 +24,11 @@ In addition, the devices will be connected to the same network (wired or wireles
 
 ### Step 2 - Network Information in AWS
 
-For edge devices being virtualized in AWS, the "edge manager" node is the same as the node running Ansible Controller. DNS/DHCP should be available within the VPC of the edge hypervisor, so simply reuse those details.
+For edge devices being virtualized in AWS, the "edge manager" node is the same as the node running Ansible Automation Controller. DNS/DHCP should be available within the VPC of the edge hypervisor, so simply reuse those details.
 
 > **Note**
 >
-> A quick reminder: your Ansible Controller information can be found on your student page.
+> A quick reminder: your Ansible Automation Controller information can be found on your student page.
 
 ### Step 3 - Saving the Information
 

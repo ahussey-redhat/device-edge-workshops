@@ -18,20 +18,23 @@ This exercise will cover:
 
 ### Step 1 - Introduction
 
-Ideally, you have an edge device at your workstation - a device from OnLogic, Intel NUC, etc, which has power and some peripherals. Depending on the environment, this may not be possible, in which case we'll be using KVM-based virtual machines to emulate an edge device.
+Ideally, you have an edge device at your workstation - a device from OnLogic or an Intel NUC, which has power and some peripherals. Depending on the environment, this may not be possible. Inwhich case we'll be using KVM based virtual machines to emulate an edge device.
 
-- If you have an edge device, proceed to [Step 2](#step-2---physical-edge-devices-introduction)
-- If you will be virtualizing an edge device, proceed to [Step 3](#step-3---edge-hypervisor-introduction)
+- If you have a physical edge device, proceed to [Step 2](#step-2---physical-edge-devices-introduction)
+- If you have a virtualized edge device, proceed to [Step 3](#step-3---edge-hypervisor-introduction)
 
-### Step 2 - Physical Edge Devices Introduction
+~~~### Step 2 - Physical Edge Devices Introduction~~~
 
-Edge devices are often low power, ARM or x86 based ruggedized devices that favor no moving parts (think: no fans, only fins) over vents and fans like more traditional devices. They often run on 12V (or less) power input and are designed to function in extreme conditions, such as high heat, freezing cold, and corrosive locations. It is very common to have devices operating in very remote locations where human intervention (typically called "rolling a truck") may require an extended journey.
+~~~Edge devices are often low power, ARM or x86 based ruggedized devices that favor no moving parts (think: no fans, only fins) over vents and fans like more traditional devices. They often run on 12V (or less) power input and are designed to function in extreme conditions, such as high heat, freezing cold, and corrosive locations. It is very common to have devices operating in very remote locations where human intervention (typically called "rolling a truck") may require an extended journey.~~~
 
-The device at your workstation may or may not match these specifications exactly, but we'll be using it as an approximation of a device that's been deployed to an extremely remote location, such as a wellhead in an oil field, or attached to a high voltage electrical pole.
+~~~The device at your workstation may or may not match these specifications exactly, but we'll be using it as an approximation of a device that's been deployed to an extremely remote location, such as a wellhead in an oil field, or attached to a high voltage electrical pole.~~~
 
-Despite the differences, there will be similiarities to more traditional devices, such as USB ports, ethernet ports, antennas, etc.
+~~~Despite the differences, there will be similiarities to more traditional devices, such as USB ports, ethernet ports, antennas, etc.~~~
 
-Feel free to investigate the hardware at your workstation, and if you have questions, please notify the lab instructor.
+~~~Feel free to investigate the hardware at your workstation, and if you have questions, please notify the lab instructor.~~~
+
+**^ The above is a duplicate of https://github.com/ahussey-redhat/rhte-edge-lab-sno/blob/documentation_update/90-facilitator-laptop/lab/content/labguides/ex-1.4/index.md#general-edge-hardware . Rather than duplicating the information, we should look to link it or remove it, so that there is one source of truth**
+
  
 ### Step 3 - Edge Hypervisor Introduction
 
@@ -41,7 +44,7 @@ We'll be leveraging KVM and Cockpit on top of Red Hat Enterprise Linux to run ou
 
 > **Note**
 >
-> The URL will contain a port number (typically `:9090`). Ensure you include it when attempting to access the Cockpit WebUI from a browser.
+> The Cockpit URL will contain a port number (typically `:9090`). Ensure you include it when attempting to access the Cockpit WebUI from a browser.
 
 After accessing the URL, you should be presented with the Cockpit login screen:
 

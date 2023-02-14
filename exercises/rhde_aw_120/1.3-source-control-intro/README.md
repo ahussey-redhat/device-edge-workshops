@@ -52,7 +52,7 @@ The above may not work, as the port number might be treated as the repository na
 # ~/.ssh/config
 host <gitea_server>
   port 2222
-  identityFile ~/.ssh/<ssh-private-key>
+  identityFile ~/.ssh/gitea
   identitiesOnly yes
 ```
 

@@ -41,12 +41,12 @@ Since this is a shortened lab, the Image Builder related steps have already been
 
 ### Step 2 - Investigating the Edge Device
 
-- A device should be available at your station, along with the usual swite of peripherals (keyboard, mouse, monitor, cables).
+- A device should be available at your station, along with the usual suite of peripherals (IE; keyboard, mouse, monitor and cables).
 - There may be doubling up of students to devices depending on availability.
 
 ### Step 3 - Accessing the Virtual Device Host
 
-A baremetal instance has been created in RHPDS that will host virtual instances meant to represent an edge device. Your "Workbench Information" page that lists credentials to the various services includes a link to the Image Builder Cockpit interface. This is the machine on which your VMs are hosted. You can, alternatively, SSH to the instance using the Edge Manager SSH Access and interact with your VMs using traditional command line tooling, virt-manager with a remote connection configured on your host, or any other access method you might prefer.
+A bare metal instance has been created in RHPDS that will host virtual instances meant to represent an edge device. Your "Workbench Information" page that lists credentials to the various services includes a link to the Image Builder Cockpit interface. This is the machine on which your VMs are hosted. You can, alternatively, SSH to the instance using the Edge Manager SSH Access and interact with your VMs using traditional command line tooling, virt-manager with a remote connection configured on your host, or any other access method you might prefer.
 
 It is highly encouraged that the Cockpit web interface be used to complete the workshop exercises. Cockpit provides:
 - An easy to access interface to managing virtual machines running on RHEL
